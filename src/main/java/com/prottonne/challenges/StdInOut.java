@@ -13,8 +13,18 @@
 
 package com.prottonne.challenges;
 
-public class Main {
+import java.util.*;
+
+public class StdInOut {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        try (Scanner scan = new Scanner(System.in)) {
+            final int firstInt = scan.nextInt();
+            final int secondInt = scan.nextInt();
+            final int thirdInt = scan.nextInt();
+
+            System.out.println(firstInt);
+            System.out.println(secondInt);
+            System.out.println(thirdInt);
+        }
     }
 }

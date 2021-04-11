@@ -7,3 +7,4 @@ This project contains **Java** challenges extracted from [HackerRank](https://ww
 ## String API
 How to split strings
 
+### [Solved](../../src/main/java/com/prottonne/challenges/StringManager.java)

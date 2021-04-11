@@ -50,4 +50,4 @@ There are **3** lines of input, and each line contains a single integer.
 125
 ````
 
-### [Solved](../../src/main/java/com/prottonne/challenges/StdInOut.java)
+### [Solved](../../src/main/java/com/prottonne/challenges/StdInOutReader.java)

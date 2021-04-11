@@ -12,4 +12,4 @@ This project contains **Java** challenges extracted from [HackerRank](https://ww
 - The command line is given to args[]. 
 - These programs have to be run on cmd.
 
-### [Solved](../../src/main/java/com/prottonne/challenges/StdInOutFromArg.java)
+### [Solved](../../src/main/java/com/prottonne/challenges/StdInOutFromArgReader.java)

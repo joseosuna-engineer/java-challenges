@@ -8,6 +8,6 @@ This project contains **Java** challenges extracted from [HackerRank](https://ww
 
 ### [Solved](../../src/main/java/com/prottonne/challenges/MyFileReader.java)
 
-## How to read to a file
+## How to write to a file
 
 ### [Solved](../../src/main/java/com/prottonne/challenges/MyFileWriter.java)

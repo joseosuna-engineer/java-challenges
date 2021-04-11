@@ -1,0 +1,44 @@
+public static Stream<String> lines(Path path,
+                                   Charset cs)
+                            throws IOException
+
+Read all lines from a file as a Stream. Unlike readAllLines, this method does not read all lines into a List, but instead populates lazily as the stream is consumed.
+
+Bytes from the file are decoded into characters using the specified charset and the same line terminators as specified by readAllLines are supported.
+
+After this method returns, then any subsequent I/O exception that occurs while reading from the file or when a malformed or unmappable byte sequence is read, is wrapped in an UncheckedIOException that will be thrown from the Stream method that caused the read to take place. In case an IOException is thrown when closing the file, it is also wrapped as an UncheckedIOException.
+
+The returned stream encapsulates a Reader. If timely disposal of file system resources is required, the try-with-resources construct should be used to ensure that the stream's close method is invoked after the stream operations are completed.
+
+Parameters:
+    path - the path to the file
+    cs - the charset to use for decoding
+Returns:
+    the lines from the file as a Stream
+Throws:
+    IOException - if an I/O error occurs opening the file
+    SecurityException - In the case of the default provider, and a security manager is installed, the checkRead method is invoked to check read access to the file.
+Since:
+    1.8
+
+
+
+public static String readString(Path path, Charset cs) throws IOException
+
+Reads all characters from a file into a string, decoding from bytes to characters using the specified charset. The method ensures that the file is closed when all content have been read or an I/O error, or other runtime exception, is thrown.
+
+This method reads all content including the line separators in the middle and/or at the end. The resulting string will contain line separators as they appear in the file.
+
+API Note:
+    This method is intended for simple cases where it is appropriate and convenient to read the content of a file into a String. It is not intended for reading very large files.
+Parameters:
+    path - the path to the file
+    cs - the charset to use for decoding
+Returns:
+    a String containing the content read from the file
+Throws:
+    IOException - if an I/O error occurs reading from the file or a malformed or unmappable byte sequence is read
+    OutOfMemoryError - if the file is extremely large, for example larger than 2GB
+    SecurityException - In the case of the default provider, and a security manager is installed, the checkRead method is invoked to check read access to the file.
+Since:
+    11 

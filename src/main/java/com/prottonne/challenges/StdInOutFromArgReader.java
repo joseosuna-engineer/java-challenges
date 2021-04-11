@@ -13,18 +13,15 @@
 
 package com.prottonne.challenges;
 
-import java.util.*;
-
-public class StdInOut {
+public class StdInOutFromArgReader {
     public static void main(String[] args) {
-        try (Scanner scan = new Scanner(System.in)) {
-            final int firstInt = scan.nextInt();
-            final int secondInt = scan.nextInt();
-            final int thirdInt = scan.nextInt();
-
-            System.out.println(firstInt);
-            System.out.println(secondInt);
-            System.out.println(thirdInt);
+        if (args.length > 0) {
+            for (String arg : args) {
+                System.out.println("Argument: " + arg);
+            }
+        } else {
+            System.out.println("No command line arguments found.");
         }
+
     }
 }

@@ -6,7 +6,7 @@ This project contains **Java** challenges extracted from [HackerRank](https://ww
 
 ## How to read input from the console
 
-**Task**
+### Task
 In this challenge, you must read **3** integers from stdin and then print them to stdout. Each integer must be printed on a new line.
 
 **Input Format**

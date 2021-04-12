@@ -6,4 +6,6 @@ This project contains **Java** challenges extracted from [HackerRank](https://ww
 
 ## How to declare and use 2D arrays
 
+### [Solved](../../src/main/java/com/prottonne/challenges/HourGlass.java)
+
 
